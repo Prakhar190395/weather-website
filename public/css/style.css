@@ -1,0 +1,14 @@
+
+footer{
+    bottom:0;
+    color: blueviolet;
+    margin: 16px;
+    padding: 12px;
+}
+
+.main-content{
+    display: block;
+    height: 500px;
+    width: 100%;
+    margin-top: 40px;
+}
