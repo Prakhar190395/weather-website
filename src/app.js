@@ -27,7 +27,6 @@ app.get('/help',(req,res) => {
     res.render('about',{title:"Help Page",name :"Sanket"})
 })
 app.get('/weather',(req,res)=>{
-    console.log(req.query)
     if(!req.query.address){
         return res.send({
             error:'You must provide address term in query string'
