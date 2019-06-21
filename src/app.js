@@ -8,6 +8,7 @@ const paritalDirectoryPath = path.join(__dirname,'../templates/partials');
 const appPath=path.join(__dirname,'../weatherapp');
 const geocode = require('./geocode.js');
 const forecast = require('./forecast.js');
+const port=port.env.PORT || 3000;
 
 app.set('view engine', 'hbs');
 //to change the path of views  ....By default goes to views folder and you can change by using below code
@@ -63,6 +64,6 @@ app.get('*',(req,res)=>{
     res.render('404');
 }) 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
 console.log('Server is up on 3000');
 })
